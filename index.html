@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header logo">
+      <a href=""><img src="Images/logo.svg" alt="logo"></a>
+    </header>
+    
+    <main class="main">
+      <div class="heading">
+        <h1><span class="light">We're</span> <br>coming<br>soon</h1>
+      </div>
+      <div class="paragraph">
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
+      <form action="/" method="GET" class="form">
+        <input class="input" type="email" placeholder="Email Address" required>
+        <button type="submit" class="button">
+          <img src="images/icon-arrow.svg" alt="arrow icon">
+        </button>
+        <img src="images/icon-error.svg" alt="error icon" class="error icon">
+        <p class="errorMessage" style="color: red; display: block;"></p>
+      </form>
+    </main>
+    <section class="aside">
+      <picture>
+        <source media="(min-width: 1025px)" srcset="images/hero-desktop.jpg" class="hero">
+        <img class="mobile" src="images/hero-mobile.jpg" alt="mobile image">
+      </picture>
+    </section>
+    
+    <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Daniel Adeeko</a>.
+        </p>
+      </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
